@@ -8,7 +8,9 @@
 
     ![秒杀架构图](https://github.com/YoloGitHub/ms/blob/master/doc/picture/ms.PNG?raw=true "秒杀架构")
     
-    ![秒杀架构图1](https://github.com/YoloGitHub/ms/blob/master/doc/picture/ms.jpg?raw=true "秒杀架构1")
+    ![秒杀架构图1](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603547578475&di=513438fcac959b9b2cf76b66af14dca2&imgtype=0&src=http%3A%2F%2Fa4.att.hudong.com%2F25%2F99%2F19300000421423134190997943822.jpg?raw=true "秒杀架构1")
+    
+    ![秒杀架构图2](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603547578475&di=513438fcac959b9b2cf76b66af14dca2&imgtype=0&src=http%3A%2F%2Fa4.att.hudong.com%2F25%2F99%2F19300000421423134190997943822.jpg? "秒杀架构2")
     
 
 # 初始化
