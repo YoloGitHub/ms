@@ -60,7 +60,10 @@
 # 描述   
 
 ## 架构图
+
     ![秒杀架构图] https://github.com/YoloGitHub/ms/blob/master/doc/picture/ms.PNG "秒杀架构"
+    
+    ![秒杀架构图1] https://github.com/YoloGitHub/ms/blob/master/doc/picture/ms.jpg "秒杀架构1"
     
 ## 说明
     
