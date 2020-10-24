@@ -15,7 +15,7 @@ public class MsserviceApplicationTests {
     @Test
     void concurrentTest(){
 
-        for(int i=0;i<40;i++){
+        for(int i=0;i<15;i++){
 
             new Thread(()->{
                 String result = restTemplate.getForObject("http://127.0.0.1:8085/ms?userId=wly"
