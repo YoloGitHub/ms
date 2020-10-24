@@ -6,9 +6,9 @@
     
 ## 架构图
 
-    ![秒杀架构图] https://github.com/YoloGitHub/ms/blob/master/doc/picture/ms.PNG?raw=true "秒杀架构"
+    ![秒杀架构图](https://github.com/YoloGitHub/ms/blob/master/doc/picture/ms.PNG?raw=true "秒杀架构")
     
-    ![秒杀架构图1] https://github.com/YoloGitHub/ms/blob/master/doc/picture/ms.jpg?raw=true "秒杀架构1"
+    ![秒杀架构图1](https://github.com/YoloGitHub/ms/blob/master/doc/picture/ms.jpg?raw=true "秒杀架构1")
     
 
 # 初始化
