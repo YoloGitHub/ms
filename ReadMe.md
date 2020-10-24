@@ -1,6 +1,6 @@
 # 简述
 
-    本系统仅仅用于练习，即对秒杀预减库存方案的模拟。
+    本系统仅用于练习，即对秒杀预减库存方案的模拟。
 
 # 初始化
 
@@ -60,7 +60,7 @@
 # 描述   
 
 ## 架构图
-    ![秒杀架构图] C:\Users\yolO\Pictures\github\ms.jpg "秒杀架构"
+    ![秒杀架构图] https://github.com/YoloGitHub/ms/blob/master/doc/picture/ms.PNG "秒杀架构"
     
 ## 说明
     
@@ -71,8 +71,8 @@
     本系统分为4个微服务，分别是：
         订单服务（orderservice）、库存服务（stockservice）、Redis服务（redisservice）、秒杀服务（msservice）。
     流程描述：
-        1. 秒杀请求过来，在秒杀服务中进行Redis服务调用预先存好的存储数据即Product中的pen的值，进行>0判断，
-        2. 之后在Redis中预减库存，使用Redisson提供的分布式锁进行请求排队处理；
+        1. 秒杀请求过来，在秒杀服务中进行Redis服务调用预先存好的存储数据即Product中的pen的值，进行>0判断;
+        2. 之后在Redis中预减库存，使用Redisson提供的分布式锁进行[判断+更新]排队处理；
         3. 将秒杀成功的数据放入RabbitMQ中；
         4. 订单服务订阅RabbitMQ消息，进行数据库订单生成，同时调用库存服务进行减库存处理，使用分布式事务进行事务化；
         5. 最后定时查看订单表支付状态，是否进行支付，超时则订单失效，库存回退处理；
