@@ -1,6 +1,15 @@
-# 简述
+# 秒杀系统简述
 
     本系统仅用于练习，即对秒杀预减库存方案的模拟。
+        
+    使用SpringBoot + SpringCloud + MybatisPlus + Mysql/H2 + Redis + Redisson + RabbitMQ + Ider ID生成器；
+    
+## 架构图
+
+    ![秒杀架构图] https://github.com/YoloGitHub/ms/blob/master/doc/picture/ms.PNG?raw=true "秒杀架构"
+    
+    ![秒杀架构图1] https://github.com/YoloGitHub/ms/blob/master/doc/picture/ms.jpg?raw=true "秒杀架构1"
+    
 
 # 初始化
 
@@ -59,16 +68,6 @@
     
 # 描述   
 
-## 架构图
-
-    ![秒杀架构图] https://github.com/YoloGitHub/ms/blob/master/doc/picture/ms.PNG "秒杀架构"
-    
-    ![秒杀架构图1] https://github.com/YoloGitHub/ms/blob/master/doc/picture/ms.jpg "秒杀架构1"
-    
-## 说明
-    
-    使用SpringBoot + SpringCloud + MybatisPlus + Mysql/H2 + Redis + Redisson + RabbitMQ + Ider ID生成器；
-    
 ### 详细说明
     
     本系统分为4个微服务，分别是：
