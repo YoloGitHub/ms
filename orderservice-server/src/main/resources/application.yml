@@ -5,7 +5,7 @@ spring:
 #    driver-class-name: com.mysql.cj.jdbc.Driver
 #    username: ms
 #    password: ms
-#    url: jdbc:mysql://YOUR_IP:12306/ms?characterEncoding=utf-8&useSSL=false
+#    url: jdbc:mysql://175.126.168.150:12306/ms?characterEncoding=utf-8&useSSL=false
   datasource:
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
     druid:
@@ -13,7 +13,7 @@ spring:
       driver-class-name: org.h2.Driver
       password: ms
       type: com.alibaba.druid.pool.DruidDataSource
-#      url: jdbc:mysql://YOUR_IP:12306/ms?characterEncoding=utf-8&useSSL=false
+#      url: jdbc:mysql://175.126.168.150:12306/ms?characterEncoding=utf-8&useSSL=false
       url: jdbc:h2:tcp://localhost:9092/~/ms;IFEXISTS=TRUE;SCHEMA=ms
       username: ms
     filters: stat,wall,log4j
@@ -30,13 +30,13 @@ spring:
     timeBetweenEvictionRunsMillis: 60000
     validationQuery: SELECT 1 FROM DUAL
   rabbitmq:
-    host: YOUR_IP
+    host: 175.126.168.150
     port: 5672
     username: admin
     password: admin
   cloud:
     consul:
-      host: YOUR_IP
+      host: 175.126.168.150
       port: 8500
       discovery:
         heartbeat:
@@ -47,7 +47,7 @@ spring:
         prefer-ip-address: true
         ip-address: 127.0.0.1
   zipkin:
-    base-url: http://YOUR_IP:9411
+    base-url: http://175.126.168.150:9411
   sleuth:
     sampler:
       probability: 1

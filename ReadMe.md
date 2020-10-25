@@ -4,13 +4,13 @@
         
     使用SpringBoot + SpringCloud + MybatisPlus + Mysql/H2 + Redis + Redisson + RabbitMQ + Ider ID生成器；
     
-## 架构图
+### 架构图
 
 ![秒杀架构图](https://yologithub.github.io/pages/ms.jpg "秒杀架构")
 
 # 初始化
 
-## mysql建库、用户
+### mysql建库、用户
 
     mysql
     create schema ms default character set utf8 collate utf8_general_ci;
@@ -20,7 +20,7 @@
     flush privileges;
 
 
-## 表1 - 订单表
+### 表1 - 订单表
 
     CREATE TABLE ORDERS(
         ORDERS_ID VARCHAR(50) PRIMARY KEY,
@@ -28,31 +28,31 @@
         PRODUCT_ID VARCHAR(50)
     );
 
-## init
-### 测试用 
+### init
+#### 测试用 
     [^_^]: insert into ORDERS values('1', 'wly', 'pen');
 
 
-## 表2 - 库存表
+### 表2 - 库存表
 
     CREATE TABLE STOCK(
         STOCKS_ID VARCHAR(50) PRIMARY KEY,
         STOCK_NUM int
     );
 
-## init
+### init
 
     insert into STOCK values('pen', 100);
 
-## Redis init
+### Redis init
 
     hset msProduct pen 100
 
-## 配置文件地址替换
+### 配置文件地址替换
 
-    全局替换配置文件中 YOUR_IP 为你的IP或者127.0.0.1
+    全局替换配置文件中 175.126.168.150 为你的IP或者127.0.0.1
 
-## Ider ID生成器Jar包获取
+### Ider ID生成器Jar包获取
 
     地址：https://github.com/YoloGitHub/ider-spring-boot-starter
 
@@ -83,11 +83,11 @@
     
     数据库表，为方便测试，都使用同一个库ms，并未再分别给Order库 和 Stock库分开，同时Id生成器也是ms库。
     
-## 更详细说明，秒杀的关键点
+### 更详细说明，秒杀的关键点
 
     参见：doc/秒杀_V1.0.xlsx
     
-## 参考说明
+### 参考说明
 
     一个秒杀系统的设计思考
         https://segmentfault.com/a/1190000020970562
